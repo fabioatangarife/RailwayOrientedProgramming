@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Inventory.Model.InventoryItem">
+    <Position X="6.25" Y="2.75" Width="2.25" />
+    <AssociationLine Name="InventoryStored" Type="Inventory.Model.InventoryItemStore">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.01" Y="0.06" Height="0.182" Width="1.193" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAACAAAAAAAAAAAgAAAAAAIQAAAAoAAAAAAAAAIAAA=</HashCode>
+      <FileName>Model\InventoryItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="InventoryStored" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Inventory.Model.Store">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <AssociationLine Name="Inventory" Type="Inventory.Model.InventoryItemStore">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="1.006" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAEAAIAAAAAIAAAAAAAgAAAAA=</HashCode>
+      <FileName>Model\Store.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Inventory" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Inventory.Model.InventoryItemStore">
+    <Position X="3.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAEAAAACAAAAAAAAAAAAAARAAEAA=</HashCode>
+      <FileName>Model\InventoryItemStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inventory.Filters.DiscountFilter">
+    <Position X="3.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAQA=</HashCode>
+      <FileName>Filters\DiscountFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inventory.Extensions.InventoryItemExtensions">
+    <Position X="6.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAADAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\InventoryItemExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inventory.Services.InventoryService">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\InventoryService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
